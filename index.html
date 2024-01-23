@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">Liquor Store</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Products</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Products</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800">Welcome to Our Liquor Store</h2>
+                <p class="mt-4 text-gray-600">Find the finest collection of liquors from around the world.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div id="featured-products" class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-bold text-gray-800">Featured Products</h3>
+        <!-- Products will be loaded here by JavaScript -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex justify-center items-center">
+                <a href="#" class="text-gray-600 text-sm text-center">Terms & Conditions</a>
+                <span class="mx-3">|</span>
+                <a href="#" class="text-gray-600 text-sm text-center">Privacy Policy</a>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-gray-600 text-sm">© 2024 Liquor Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
